@@ -362,6 +362,7 @@ h6 {
 }
 .footer-wrapper {
   display: flex;
+  align-items: baseline;
 }
 .footer-container {
 }
