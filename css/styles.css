@@ -250,13 +250,20 @@ h6 {
 .div-hero-svg-icon {
   fill: #f4f4fd;
   background-color: #4d5ae5;
-  border: 0px solid #ffffff;
-  border-radius: 100%;
   display: flex;
 }
 .svg-icon-list {
   width: 40px;
   height: 40px;
+  border: 0px solid #ffffff;
+  border-radius: 10%;
+}
+.svg-icon-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 0px solid #ffffff;
+  border-radius: 50%;
 }
 .section-tiem-img {
   margin-bottom: 32px;
