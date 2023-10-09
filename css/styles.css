@@ -134,7 +134,13 @@ h6 {
 /*------------sektone--------*/
 .sektone {
   padding: 188px 0;
-  background-color: #2e2f42;
+  background-image: linear-gradient(
+      rgba(46, 47, 66, 0.7),
+      rgba(46, 47, 66, 0.7)
+    ),
+    url(../images/people-office.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
 }
 .solutions {
 }
@@ -175,6 +181,16 @@ h6 {
   padding: 120px 0;
 }
 .feature-spdt {
+}
+.feture-icon {
+  display: flex;
+  padding: 24px 100px;
+  width: 264px;
+  height: 112px;
+  border-radius: 4px;
+  margin-bottom: 8px;
+  border: 1px solid var(--LIGHT-SLATE, #8e8f99);
+  background: var(--CLOUD, #f4f4fd);
 }
 .ul-spdt {
   display: flex;
@@ -229,6 +245,19 @@ h6 {
 .div-hero {
   padding: 32px 0;
 }
+.svg-icon-list {
+}
+.div-hero-svg-icon {
+  fill: #f4f4fd;
+  background-color: #4d5ae5;
+  border: 0px solid #ffffff;
+  border-radius: 100%;
+  display: flex;
+}
+.svg-icon-list {
+  width: 40px;
+  height: 40px;
+}
 .section-tiem-img {
   margin-bottom: 32px;
 }
@@ -260,6 +289,7 @@ h6 {
   letter-spacing: 0.02em;
   text-align: center;
   margin: 0;
+  margin-bottom: 8px;
 }
 
 /*----------------------section-our-portfolio-----------*/
