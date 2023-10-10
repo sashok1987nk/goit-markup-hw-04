@@ -99,7 +99,7 @@ h6 {
 .header-spc-link:first-child :after {
   display: block;
   content: "";
-  width: 100%;
+  width: 48px;
   height: 4px;
   flex-shrink: 0;
   border-radius: 2px;
