@@ -96,7 +96,18 @@ h6 {
 .header-spc-link:focus {
   color: #404bbf;
 }
-
+.header-spc-link:first-child :after {
+  display: block;
+  content: "";
+  width: 100%;
+  height: 4px;
+  flex-shrink: 0;
+  border-radius: 2px;
+  margin-top: 20px;
+}
+.header-spc-link:first-child:active::after {
+  background-color: #404bbf;
+}
 .header-spc-link {
   font-size: 16px;
   font-weight: 500;
