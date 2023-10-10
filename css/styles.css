@@ -352,6 +352,13 @@ h6 {
   border: 1px solid var(--CORNFLOWER, #e7e9fc);
   border-top: none;
 }
+.div-servis:hover {
+  border: 1px solid var(--CLOUD, #f4f4fd);
+  background: var(--WHITE, #fff);
+  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
+    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
+    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+}
 .servis-liste {
   display: flex;
   flex-wrap: wrap;
@@ -371,6 +378,9 @@ h6 {
 }
 .servis-item {
   width: calc((100% - 48px) / 3);
+}
+.servis-item:hover {
+  cursor: pointer;
 }
 .servis-item:hover .ander-block {
   transform: translateY(0);
