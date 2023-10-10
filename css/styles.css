@@ -96,18 +96,17 @@ h6 {
 .header-spc-link:focus {
   color: #404bbf;
 }
-.header-spc-link:first-child :after {
-  display: block;
-  content: "";
+
+.header-spc-link:hover::after {
+  content: "123";
   width: 48px;
   height: 4px;
-  flex-shrink: 0;
-  border-radius: 2px;
-  margin-top: 20px;
+  color: #31d0aa;
+  border-radius: 0;
+  display: block;
+  position: absolute;
 }
-.header-spc-link:first-child:active::after {
-  background-color: #404bbf;
-}
+
 .header-spc-link {
   font-size: 16px;
   font-weight: 500;
@@ -115,6 +114,7 @@ h6 {
   letter-spacing: 0.02em;
   color: #2e2f42;
   padding: 24px 0;
+  position: relative;
 }
 .header-item {
   padding: 24px 0;
