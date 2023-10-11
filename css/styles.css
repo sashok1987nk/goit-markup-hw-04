@@ -54,6 +54,8 @@ h6 {
 }
 .header {
   border-bottom: 1px solid #e7e9fc;
+  box-shadow: 0px 2px 1px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 1px 6px rgba(46, 47, 66, 0.08);
 }
 .header-nav {
   display: flex;
@@ -164,7 +166,9 @@ h6 {
     url(../images/people-office.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: contain;
+  background-size: cover;
+  max-width: 1440px;
+  margin: auto;
 }
 .solutions {
 }
@@ -198,6 +202,7 @@ h6 {
   border-radius: 4px;
   min-width: 169px;
   border: none;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
   box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 /*************************sektion-spdt****************/
@@ -208,6 +213,8 @@ h6 {
 }
 .feture-icon {
   display: flex;
+  align-items: center;
+  justify-content: center;
   padding: 24px 100px;
   width: 264px;
   height: 112px;
@@ -276,26 +283,29 @@ h6 {
 }
 .svg-icon-list {
   border: 0 solid #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
 }
-.svg-icon-list:hover,
-.svg-icon-list:focus {
+.svg-icon-link:hover,
+.svg-icon-link:focus {
   background-color: #31d0aa;
 }
 .div-hero-svg-icon {
   width: 16px;
   height: 16px;
-  fill: #ffffff;
+  fill: #f4f4fd;
 }
 .svg-icon-list {
 }
 .svg-icon-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .section-tiem-img {
   margin-bottom: 32px;
@@ -346,6 +356,7 @@ h6 {
 .ander-block-wrapper {
   position: relative;
   overflow: hidden;
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .ander-block {
   position: absolute;
@@ -381,9 +392,8 @@ h6 {
 .div-servis:hover {
   border: 1px solid var(--CLOUD, #f4f4fd);
   background: var(--WHITE, #fff);
-  box-shadow: 0px 2px 1px 0px rgba(46, 47, 66, 0.08),
-    0px 1px 1px 0px rgba(46, 47, 66, 0.16),
-    0px 1px 6px 0px rgba(46, 47, 66, 0.08);
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .servis-liste {
   display: flex;
@@ -409,7 +419,7 @@ h6 {
   cursor: pointer;
 }
 .servis-item:hover .ander-block {
-  transform: translateY(0);
+  transform: translateY(0%);
   background-color: #4d5ae5;
 }
 .servis-liste-par {
@@ -427,6 +437,7 @@ h6 {
   align-items: baseline;
 }
 .footer-container {
+  margin-right: 120px;
 }
 .footer-logo-text {
   color: #f4f4fd;
@@ -441,7 +452,6 @@ h6 {
   max-width: 264px;
 }
 .foter-tittli-social {
-  margin-left: 120px;
 }
 .footer-tittle-two {
   color: var(--WHITE, #fff);
@@ -459,22 +469,24 @@ h6 {
 }
 .footer-social-list {
   border: 0 solid #ffffff;
-  border-radius: 50%;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   width: 40px;
   height: 40px;
-  background-color: #4d5ae5;
 }
-.footer-social-list:hover,
-.footer-social-list:focus {
+.footer-social-link:hover,
+.footer-social-link:focus {
   background-color: #31d0aa;
 }
 .footer-social-link {
+  width: 100%;
+  height: 100%;
+  background-color: #4d5ae5;
+  border: radius 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .footer-social-svg {
-  width: 16px;
-  height: 16px;
-  fill: #ffffff;
+  width: 24px;
+  height: 24px;
+  fill: #f4f4fd;
 }
