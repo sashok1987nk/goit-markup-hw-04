@@ -104,10 +104,10 @@ h6 {
   width: 100%;
   height: 4px;
   background-color: #404bbf;
-  border-radius: 0;
+  border-radius: 2px;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .header-spc-link:hover::after {
@@ -115,10 +115,10 @@ h6 {
   width: 100%;
   height: 4px;
   background-color: #404bbf;
-  border-radius: 0;
+  border-radius: 2px;
   display: block;
   position: absolute;
-  bottom: 0;
+  bottom: -1px;
 }
 
 .header-spc-link {
@@ -140,6 +140,7 @@ h6 {
 }
 .header-Contacts {
   padding: 24px 0;
+  transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .header-contacts-link {
   font-weight: normal;
@@ -356,7 +357,6 @@ h6 {
 .ander-block-wrapper {
   position: relative;
   overflow: hidden;
-  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .ander-text {
@@ -414,6 +414,7 @@ h6 {
 }
 .servis-item {
   width: calc((100% - 48px) / 3);
+  transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .servis-item:hover {
   cursor: pointer;
