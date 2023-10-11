@@ -358,8 +358,7 @@ h6 {
   overflow: hidden;
   transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
-.ander-block {
-}
+
 .ander-text {
   line-height: 1.5;
   font-size: 16px;
@@ -371,8 +370,12 @@ h6 {
   background-color: #4d5ae5;
   height: 100%;
   width: 100%;
+  margin: 0 auto;
   transform: translateY(100%);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+.servis-item:hover .ander-text {
+  transform: translateY(0%);
 }
 .our-portfolio {
   line-height: 1.11;
@@ -391,8 +394,6 @@ h6 {
 .div-servis:hover {
   border: 1px solid var(--CLOUD, #f4f4fd);
   background: var(--WHITE, #fff);
-  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
-    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 .servis-liste {
   display: flex;
@@ -416,11 +417,10 @@ h6 {
 }
 .servis-item:hover {
   cursor: pointer;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
-.servis-item:hover .ander-block {
-  transform: translateY(0%);
-  background-color: #4d5ae5;
-}
+
 .servis-liste-par {
   line-height: 1.5;
   letter-spacing: 0.02em;
@@ -458,6 +458,7 @@ h6 {
   font-weight: 500;
   line-height: 24px;
   letter-spacing: 0.02em;
+  margin: 0;
   margin-bottom: 16px;
   font-style: normal;
 }
