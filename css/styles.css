@@ -108,6 +108,7 @@ h6 {
   display: block;
   position: absolute;
   bottom: -1px;
+  left: 0;
 }
 
 .header-link-plus:hover::after {
@@ -119,6 +120,7 @@ h6 {
   display: block;
   position: absolute;
   bottom: -1px;
+  left: 0;
 }
 
 .header-spc-link {
